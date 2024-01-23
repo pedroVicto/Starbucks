@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon" href="./image/logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" media="(max-width: 800px)" href="resposive.css" />
+    <title>starbucks</title>
+  </head>
+  <body>
+    <div class='tudo'>
+      <div class="imagem-fundo"></div>
+      <img src="./image/logo.png" alt="logo do strabucks" class="logo" />
+      <div class="conteudo">
+        <div class="texto">
+          <h2>
+            It's not just coffee
+            <br />
+            it's <span>Starbucks</span>
+          </h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            magni doloribus similique, cum saepe natus. Tenetur aliquam dicta
+            voluptates ex saepe magnam ipsam, id, placeat numquam velit expedita
+            facilis alias.
+          </p>
+          <button>Compre ja esse sabores!</button>
+        </div>
+
+        <div class="imagem">
+          <img src="./image/img1.png" alt="copo starbucks" class="copo" />
+        </div>
+      </div>
+
+      <div class="menu">
+        <img
+          src="./image/img-pequena1.png"
+          alt="copinho ilustrativo de sabor limão"
+          class="copinho verde"
+        />
+        <img
+          src="./image/img-pequena2 (1).png"
+          alt="copinho ilustrativo sabor morango"
+          class="copinho amarelo"
+        />
+        <img
+          src="./image/img-pequena3.png"
+          alt="copinho ilustrativo sabor framboesa"
+          class="copinho rosa"
+        />
+      </div>
+    </div>
+  </body>
+  <script>
+    let imgfundo = document.querySelector(".imagem-fundo");
+    let imgCopo = document.querySelector(".copo");
+    let copoVerde = document.querySelector(".verde");
+    let copoAmarelo = document.querySelector(".amarelo");
+    let copoRosa = document.querySelector(".rosa");
+
+    copoVerde.addEventListener("click", () => {
+      imgCopo.src = "./image/img1.png";
+      imgfundo.style.background = "#017143";
+    });
+
+    copoAmarelo.addEventListener("click", () => {
+      imgCopo.src = "./image/img2 (1).png";
+      imgfundo.style.background = "#eb7495";
+    });
+
+    copoRosa.addEventListener("click", () => {
+      imgCopo.src = "./image/img3.png";
+      imgfundo.style.background = "#d752b1";
+    });
+  </script>
+</html>
